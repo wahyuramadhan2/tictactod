@@ -24,8 +24,8 @@ var Player = (name) => {
     // Properties
     var _isPlaying = false;
     var _gameMode;
-    var _crossPlayer = Player('Cross');
-    var _noughtPlayer = Player('Nought');
+    var _crossPlayer = Player('Silang');
+    var _noughtPlayer = Player('Bulat');
     var _currentPlayer;
 
 
