@@ -50,7 +50,7 @@ var Player = (name) => {
                 } else if (GameBoard.getEmpty() == 0) { // Tie
                     _isPlaying = false;
                     DisplayController.updateGrid(position, _currentPlayer);
-                    DisplayController.updateLabel('Tie!');
+                    DisplayController.updateLabel('Imbang, Bro!');
 
                 } else { // Continue playing
                     DisplayController.updateGrid(position, _currentPlayer);
