@@ -45,7 +45,7 @@ var Player = (name) => {
                 if (win) { // Player has won
                     _isPlaying = false;
                     DisplayController.greetWinner(win, _currentPlayer);
-                    DisplayController.updateLabel(_currentPlayer.getName() + ' has won, congratulations!');
+                    DisplayController.updateLabel(_currentPlayer.getName() + ' memenangkan pertandingan, selamat su!');
 
                 } else if (GameBoard.getEmpty() == 0) { // Tie
                     _isPlaying = false;
@@ -55,7 +55,7 @@ var Player = (name) => {
                 } else { // Continue playing
                     DisplayController.updateGrid(position, _currentPlayer);
                     _currentPlayer = _currentPlayer == _crossPlayer ? _noughtPlayer : _crossPlayer;
-                    DisplayController.updateLabel(_currentPlayer.getName() + ', now is your turn.');
+                    DisplayController.updateLabel(_currentPlayer.getName() + ', sekarang giliranmu.');
 
                     if (_currentPlayer.isRobot) { // Check if the next turn is the computer's turn
                         updateGame(minimax(randomInt(0, 9), 0, true));
